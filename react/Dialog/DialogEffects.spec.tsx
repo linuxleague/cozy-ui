@@ -6,7 +6,7 @@ import { render } from '@testing-library/react'
 import { WebviewIntentProvider, WebviewService } from 'cozy-intent'
 
 import Dialog from '.'
-import { BreakpointsProvider } from '../hooks/useBreakpoints'
+import { BreakpointsProvider } from '../providers/Breakpoints'
 import { DOMStrings, makeOnMount, makeOnUnmount } from './DialogEffects'
 import { ThemeColor } from '../hooks/useSetFlagshipUi/useSetFlagshipUI'
 

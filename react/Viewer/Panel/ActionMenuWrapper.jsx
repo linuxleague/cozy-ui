@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 import { useAppLinkWithStoreFallback, useClient } from 'cozy-client'
 
-import useBreakpoints from '../../hooks/useBreakpoints'
-import { useI18n } from '../../I18n'
+import useBreakpoints from '../../providers/Breakpoints'
+import { useI18n } from '../../providers/I18n'
 import useViewerSnackbar from '../providers/ViewerSnackbarProvider'
 import {
   buildEditAttributePath,

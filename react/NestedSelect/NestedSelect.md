@@ -6,7 +6,7 @@ import NestedSelectModal from './Modal'
 import ListItem from '../ListItem'
 import ListItemText from '../ListItemText'
 import Checkbox from '../Checkbox'
-import useBreakpoints, { BreakpointsProvider } from '../hooks/useBreakpoints'
+import useBreakpoints, { BreakpointsProvider } from '../providers/Breakpoints'
 import palette from 'cozy-ui/transpiled/react/palette'
 
 const Image = ({ letter }) => (

@@ -5,7 +5,7 @@ import cx from 'classnames'
 import { Q, fetchPolicies, useClient, useQuery } from 'cozy-client'
 
 import { DialogTitle, DialogContent } from '../Dialog'
-import CozyTheme from '../CozyTheme'
+import CozyTheme from '../providers/CozyTheme'
 import {
   TopAnchoredDialog,
   DialogCloseButton,
@@ -13,7 +13,7 @@ import {
 } from '../CozyDialogs'
 import useRealtime from '../hooks/useRealtime'
 import useEventListener from '../hooks/useEventListener'
-import useBreakpoints from '../hooks/useBreakpoints'
+import useBreakpoints from '../providers/Breakpoints'
 import Button from '../Buttons'
 import PlusIcon from '../Icons/Plus'
 import Icon from '../Icon'

@@ -48,7 +48,7 @@ import DotsIcon from "cozy-ui/transpiled/react/Icons/Dots"
 import PenIcon from "cozy-ui/transpiled/react/Icons/Pen"
 import TrashIcon from "cozy-ui/transpiled/react/Icons/Trash"
 import IconButton from 'cozy-ui/transpiled/react/IconButton'
-import { BreakpointsProvider } from 'cozy-ui/transpiled/react/hooks/useBreakpoints'
+import { BreakpointsProvider } from 'cozy-ui/transpiled/react/providers/Breakpoints'
 import FileIcon from 'cozy-ui/transpiled/react/Icons/File'
 import PeopleIcon from 'cozy-ui/transpiled/react/Icons/People'
 import Typography from 'cozy-ui/transpiled/react/Typography'
@@ -283,7 +283,7 @@ import FiletypeTextIcon from 'cozy-ui/transpiled/react/Icons/FileTypeText'
 ### Contextualized item
 
 ```jsx
-import { BreakpointsProvider } from 'cozy-ui/transpiled/react/hooks/useBreakpoints'
+import { BreakpointsProvider } from 'cozy-ui/transpiled/react/providers/Breakpoints'
 import List from 'cozy-ui/transpiled/react/List'
 import ListItemContact from 'cozy-ui/transpiled/react/ListItem/ListItemContact'
 import ListItemFile from 'cozy-ui/transpiled/react/ListItem/ListItemFile'

@@ -2,8 +2,8 @@ import React from 'react'
 
 import { CozyProvider } from 'cozy-client'
 
-import { BreakpointsProvider } from 'cozy-ui/transpiled/react/hooks/useBreakpoints'
-import { I18nContext } from 'cozy-ui/transpiled/react/I18n'
+import { BreakpointsProvider } from 'cozy-ui/transpiled/react/providers/Breakpoints'
+import { I18nContext } from 'cozy-ui/transpiled/react/providers/I18n'
 
 const defaultClient = {
   plugins: {

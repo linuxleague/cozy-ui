@@ -295,7 +295,7 @@ import { useState, useEffect } from 'react'
 import { Dialog } from 'cozy-ui/transpiled/react/CozyDialogs'
 import {
   BreakpointsProvider
-} from 'cozy-ui/transpiled/react/hooks/useBreakpoints'
+} from 'cozy-ui/transpiled/react/providers/Breakpoints'
 
 import Button from 'cozy-ui/transpiled/react/deprecated/Button'
 import Typography from 'cozy-ui/transpiled/react/Typography'

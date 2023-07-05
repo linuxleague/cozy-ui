@@ -22,7 +22,7 @@ client.registerPlugin(RealtimePlugin)
 
 ```jsx
 import ContactsListModal from 'cozy-ui/transpiled/react/ContactsListModal';
-import { BreakpointsProvider } from 'cozy-ui/transpiled/react/hooks/useBreakpoints';
+import { BreakpointsProvider } from 'cozy-ui/transpiled/react/providers/Breakpoints';
 import DemoProvider from './DemoProvider';
 
 initialState = { opened: isTesting() };

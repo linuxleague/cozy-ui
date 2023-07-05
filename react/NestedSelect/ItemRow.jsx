@@ -7,7 +7,7 @@ import Divider from '../Divider'
 import ListItem from '../ListItem'
 import ListItemIcon from '../ListItemIcon'
 import Radio from '../Radios'
-import useBreakpoints from '../hooks/useBreakpoints'
+import useBreakpoints from '../providers/Breakpoints'
 
 const ItemRow = ({ item, onClick, isSelected, radioPosition }) => {
   const { isDesktop } = useBreakpoints()

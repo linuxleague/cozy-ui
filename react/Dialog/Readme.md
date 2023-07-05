@@ -10,7 +10,7 @@ import Dialog, { DialogTitle, DialogActions } from 'cozy-ui/transpiled/react/Dia
 import { DialogBackButton, DialogCloseButton, useCozyDialog } from 'cozy-ui/transpiled/react/CozyDialogs'
 import useBreakpoints, {
   BreakpointsProvider
-} from 'cozy-ui/transpiled/react/hooks/useBreakpoints'
+} from 'cozy-ui/transpiled/react/providers/Breakpoints'
 import Alerter from 'cozy-ui/transpiled/react/deprecated/Alerter'
 
 import Divider from 'cozy-ui/transpiled/react/Divider'

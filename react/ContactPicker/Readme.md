@@ -5,7 +5,7 @@
 Also, to take advantage of realtime updates of the contacts, the CozyClient passed to the provider should have a realtime plugin initialized. The component will work without realtime initialized, but the list will not always be up-to-date.
 
 ```jsx
-import { BreakpointsProvider } from 'cozy-ui/transpiled/react/hooks/useBreakpoints'
+import { BreakpointsProvider } from 'cozy-ui/transpiled/react/providers/Breakpoints'
 import ContactPicker from 'cozy-ui/transpiled/react/ContactPicker'
 import DemoProvider from 'cozy-ui/transpiled/react/ContactsListModal/DemoProvider'
 

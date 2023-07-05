@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import { useI18n } from '../../I18n'
+import { useI18n } from '../../providers/I18n'
 
 import withListItemLocales from '../hoc/withListItemLocales'
 
