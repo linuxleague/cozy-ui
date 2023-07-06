@@ -85,7 +85,7 @@ To increase discoverability, the FAB can be extended at first and then changed t
 ```jsx
 import { ExtendableFab } from 'cozy-ui/transpiled/react/Fab'
 import PlusIcon from 'cozy-ui/transpiled/react/Icons/Plus'
-import DemoProvider from 'cozy-ui/docs/components/DemoProvider'
+import DemoProvider from 'cozy-ui/transpiled/react/utils/DemoProvider'
 import {useRef} from 'react'
 
 const Demo = ({ onClick, className }) => {

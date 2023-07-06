@@ -1,5 +1,5 @@
 ```jsx
-import DemoProvider from 'cozy-ui/docs/components/DemoProvider'
+import DemoProvider from 'cozy-ui/transpiled/react/utils/DemoProvider'
 import Variants from 'cozy-ui/docs/components/Variants'
 import SearchBar from 'cozy-ui/transpiled/react/SearchBar'
 import Typography from 'cozy-ui/transpiled/react/Typography'

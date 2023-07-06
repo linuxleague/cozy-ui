@@ -16,7 +16,7 @@ import {
 import { CozyProvider } from "cozy-client"
 import { BreakpointsProvider } from "cozy-ui/transpiled/react/providers/Breakpoints"
 import Variants from 'cozy-ui/docs/components/Variants'
-import DemoProvider from 'cozy-ui/docs/components/DemoProvider'
+import DemoProvider from 'cozy-ui/transpiled/react/utils/DemoProvider'
 import Button from  'cozy-ui/transpiled/react/Buttons'
 
 const initialVariants = [{

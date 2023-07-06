@@ -30,7 +30,7 @@ const expl = () => ({
 ```
 
 ```jsx
-import DemoProvider from 'cozy-ui/docs/components/DemoProvider'
+import DemoProvider from 'cozy-ui/transpiled/react/utils/DemoProvider'
 import Variants from 'cozy-ui/docs/components/Variants'
 import DropdownButton from 'cozy-ui/transpiled/react/DropdownButton'
 import FileIcon from 'cozy-ui/transpiled/react/Icons/File'

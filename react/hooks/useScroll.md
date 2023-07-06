@@ -9,7 +9,7 @@ import useScroll from 'cozy-ui/transpiled/react/hooks/useScroll'
 import Fab from 'cozy-ui/transpiled/react/Fab'
 import Icon from 'cozy-ui/transpiled/react/Icon'
 import PlusIcon from 'cozy-ui/transpiled/react/Icons/Plus'
-import DemoProvider from 'cozy-ui/docs/components/DemoProvider'
+import DemoProvider from 'cozy-ui/transpiled/react/utils/DemoProvider'
 import {useRef, useEffect} from 'react'
 
 const Demo = ({ onClick, className }) => {

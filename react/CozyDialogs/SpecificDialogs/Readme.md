@@ -5,7 +5,7 @@ You can customize links and image with `playStoreUrl`, `appStoreUrl` and `QRCode
 ```jsx
 import { useState } from 'react';
 
-import DemoProvider from 'cozy-ui/docs/components/DemoProvider';
+import DemoProvider from 'cozy-ui/transpiled/react/utils/DemoProvider';
 import { InstallFlagshipAppDialog } from 'cozy-ui/transpiled/react/CozyDialogs';
 import Buttons from 'cozy-ui/transpiled/react/Buttons';
 
@@ -29,7 +29,7 @@ Dialog used to authenticate a user in the cozy system. The authentication logic 
 ```jsx
 import { AuthentificationDialog } from  'cozy-ui/transpiled/react/CozyDialogs'
 import Button from  'cozy-ui/transpiled/react/Buttons'
-import DemoProvider from 'cozy-ui/docs/components/DemoProvider'
+import DemoProvider from 'cozy-ui/transpiled/react/utils/DemoProvider'
 import Variants from 'cozy-ui/docs/components/Variants'
 import FormControlLabel from 'cozy-ui/transpiled/react/FormControlLabel'
 import RadioGroup from 'cozy-ui/transpiled/react/RadioGroup'

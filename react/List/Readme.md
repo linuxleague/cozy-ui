@@ -294,7 +294,7 @@ import ListItemText from 'cozy-ui/transpiled/react/ListItemText'
 import Icon from 'cozy-ui/transpiled/react/Icon'
 import Divider from 'cozy-ui/transpiled/react/Divider'
 import FiletypeTextIcon from 'cozy-ui/transpiled/react/Icons/FileTypeText'
-import DemoProvider from 'cozy-ui/docs/components/DemoProvider'
+import DemoProvider from 'cozy-ui/transpiled/react/utils/DemoProvider'
 
 const mockClient = {
   plugins: {

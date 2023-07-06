@@ -38,7 +38,7 @@ const expl = makeActionOptions => ({
 ```
 
 ```jsx
-import DemoProvider from 'cozy-ui/docs/components/DemoProvider'
+import DemoProvider from 'cozy-ui/transpiled/react/utils/DemoProvider'
 import DropdownButton from 'cozy-ui/transpiled/react/DropdownButton'
 import ActionsMenu from 'cozy-ui/transpiled/react/ActionsMenu'
 import ActionsMenuItem from 'cozy-ui/transpiled/react/ActionsMenu/ActionsMenuItem'
@@ -122,7 +122,7 @@ const actions = makeActions([ modify, viewInContacts, divider, call, smsTo, emai
 ### With a manual creation of the actions
 
 ```jsx
-import DemoProvider from 'cozy-ui/docs/components/DemoProvider'
+import DemoProvider from 'cozy-ui/transpiled/react/utils/DemoProvider'
 import DropdownButton from 'cozy-ui/transpiled/react/DropdownButton'
 import ActionsMenuWrapper from 'cozy-ui/transpiled/react/ActionsMenu/ActionsMenuWrapper'
 import ActionsMenuItem from 'cozy-ui/transpiled/react/ActionsMenu/ActionsMenuItem'
