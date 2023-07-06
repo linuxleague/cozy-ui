@@ -1,9 +1,10 @@
 import React from 'react'
 import Preview from 'react-styleguidist/lib/client/rsg-components/Preview'
-import fs from 'fs'
 import chunkify from 'react-styleguidist/lib/loaders/utils/chunkify'
+import fs from 'fs'
 import pretty from 'pretty'
 
+import DemoProvider from '../react/utils/DemoProvider'
 import * as content from '../docs/fixtures/content'
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
@@ -64,7 +65,9 @@ const testFromStyleguidist = (
       }
       codes.forEach(async code => {
         const root = mount(
-          <Preview code={code.content} evalInContext={evalInContext} />,
+          <DemoProvider>
+            <Preview code={code.content} evalInContext={evalInContext} />
+          </DemoProvider>,
           options
         )
         await sleep(delay) // some components (like the ActionMenu) are flaky due to external libs
