@@ -2,9 +2,9 @@ import React from 'react'
 
 import { CozyProvider } from 'cozy-client'
 
-import CozyTheme from 'cozy-ui/transpiled/react/providers/CozyTheme'
-import { BreakpointsProvider } from 'cozy-ui/transpiled/react/providers/Breakpoints'
-import { I18nContext } from 'cozy-ui/transpiled/react/providers/I18n'
+import CozyTheme from '../providers/CozyTheme'
+import { BreakpointsProvider } from '../providers/Breakpoints'
+import { I18nContext } from '../providers/I18n'
 
 const defaultClient = {
   plugins: {
