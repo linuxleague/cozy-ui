@@ -9,6 +9,7 @@ import Dialog from '.'
 import { BreakpointsProvider } from '../providers/Breakpoints'
 import { DOMStrings, makeOnMount, makeOnUnmount } from './DialogEffects'
 import { ThemeColor } from '../hooks/useSetFlagshipUi/useSetFlagshipUI'
+import DemoProvider from '../utils/DemoProvider'
 
 const theme = {
   palette: {
@@ -256,9 +257,9 @@ it('should emit onMount() immediately and onUnmount() when the whole tree is del
 
   const { unmount } = render(
     <WebviewIntentProvider webviewService={service}>
-      <BreakpointsProvider>
+      <DemoProvider>
         <Dialog open />
-      </BreakpointsProvider>
+      </DemoProvider>
     </WebviewIntentProvider>
   )
 
@@ -287,9 +288,9 @@ it('should emit onMount() immediately and onUnmount() when Dialog is deleted fro
 
   const { rerender } = render(
     <WebviewIntentProvider webviewService={service}>
-      <BreakpointsProvider>
+      <DemoProvider>
         <Dialog open />
-      </BreakpointsProvider>
+      </DemoProvider>
     </WebviewIntentProvider>
   )
 
@@ -320,9 +321,9 @@ it('should not emit onMount() if mounted as open:false, then emit onMount() on o
 
   const { rerender, unmount } = render(
     <WebviewIntentProvider webviewService={service}>
-      <BreakpointsProvider>
+      <DemoProvider>
         <Dialog open={false} />
-      </BreakpointsProvider>
+      </DemoProvider>
     </WebviewIntentProvider>
   )
 
@@ -330,9 +331,9 @@ it('should not emit onMount() if mounted as open:false, then emit onMount() on o
 
   rerender(
     <WebviewIntentProvider webviewService={service}>
-      <BreakpointsProvider>
+      <DemoProvider>
         <Dialog open={true} />
-      </BreakpointsProvider>
+      </DemoProvider>
     </WebviewIntentProvider>
   )
 
@@ -345,9 +346,9 @@ it('should not emit onMount() if mounted as open:false, then emit onMount() on o
 
   rerender(
     <WebviewIntentProvider webviewService={service}>
-      <BreakpointsProvider>
+      <DemoProvider>
         <Dialog open={false} />
-      </BreakpointsProvider>
+      </DemoProvider>
     </WebviewIntentProvider>
   )
 
@@ -360,9 +361,9 @@ it('should not emit onMount() if mounted as open:false, then emit onMount() on o
 
   rerender(
     <WebviewIntentProvider webviewService={service}>
-      <BreakpointsProvider>
+      <DemoProvider>
         <Dialog open={true} />
-      </BreakpointsProvider>
+      </DemoProvider>
     </WebviewIntentProvider>
   )
 
@@ -396,9 +397,9 @@ it('when provided with a faulty <Dialog /> that has no open prop, it should emit
 
   const { unmount } = render(
     <WebviewIntentProvider webviewService={service}>
-      <BreakpointsProvider>
+      <DemoProvider>
         <Dialog />
-      </BreakpointsProvider>
+      </DemoProvider>
     </WebviewIntentProvider>
   )
 
@@ -420,9 +421,9 @@ it('when provided with a faulty <Dialog /> that has no open prop, and then fixed
 
   const { rerender, unmount } = render(
     <WebviewIntentProvider webviewService={service}>
-      <BreakpointsProvider>
+      <DemoProvider>
         <Dialog />
-      </BreakpointsProvider>
+      </DemoProvider>
     </WebviewIntentProvider>
   )
 
@@ -430,9 +431,9 @@ it('when provided with a faulty <Dialog /> that has no open prop, and then fixed
 
   rerender(
     <WebviewIntentProvider webviewService={service}>
-      <BreakpointsProvider>
+      <DemoProvider>
         <Dialog open />
-      </BreakpointsProvider>
+      </DemoProvider>
     </WebviewIntentProvider>
   )
 
@@ -445,9 +446,9 @@ it('when provided with a faulty <Dialog /> that has no open prop, and then fixed
 
   rerender(
     <WebviewIntentProvider webviewService={service}>
-      <BreakpointsProvider>
+      <DemoProvider>
         <Dialog open={false} />
-      </BreakpointsProvider>
+      </DemoProvider>
     </WebviewIntentProvider>
   )
 

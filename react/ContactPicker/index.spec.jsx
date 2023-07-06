@@ -3,14 +3,28 @@ import { render, fireEvent } from '@testing-library/react'
 
 import DemoProvider from '../ContactsListModal/DemoProvider'
 import { BreakpointsProvider } from '../providers/Breakpoints'
+import CozyTheme from '../providers/CozyTheme'
+import { I18nContext } from '../providers/I18n'
 import contacts from '../ContactsList/_mockContacts.json'
 
 import ContactPicker from '.'
 
 const Wrapper = ({ children }) => {
+  const lang = localStorage.getItem('lang') || 'en'
+
   return (
     <DemoProvider>
-      <BreakpointsProvider>{children}</BreakpointsProvider>
+      <BreakpointsProvider>
+        <I18nContext.Provider
+          value={{
+            t: x => x,
+            f: () => '01 Jan. 2022',
+            lang
+          }}
+        >
+          <CozyTheme variant="normal">{children}</CozyTheme>
+        </I18nContext.Provider>
+      </BreakpointsProvider>
     </DemoProvider>
   )
 }
