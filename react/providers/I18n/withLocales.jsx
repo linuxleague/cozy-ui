@@ -1,6 +1,7 @@
 import React from 'react'
-import { I18n, translate } from '.'
 import omit from 'lodash/omit'
+
+import { I18n, translate } from '.'
 
 /**
  *

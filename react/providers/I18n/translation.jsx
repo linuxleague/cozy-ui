@@ -1,4 +1,5 @@
 import Polyglot from 'node-polyglot'
+
 import { DEFAULT_LANG } from '.'
 
 export let _polyglot

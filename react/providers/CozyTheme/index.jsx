@@ -1,9 +1,21 @@
 import React, { createContext, useContext } from 'react'
 import cx from 'classnames'
 
-import MuiCozyTheme from '../MuiCozyTheme'
+import MuiCozyTheme from '../../MuiCozyTheme'
 
 export const CozyThemeContext = createContext()
+
+export const useCozyTheme = () => {
+  const context = useContext(CozyThemeContext)
+
+  if (!context) {
+    throw new Error(
+      '`CozyThemeContext` is missing. `useCozyTheme()` must be used within a `<CozyTheme>`'
+    )
+  }
+
+  return context
+}
 
 const CozyTheme = ({ variant, children, className }) => (
   <CozyThemeContext.Provider value={variant}>
@@ -18,7 +30,5 @@ const CozyTheme = ({ variant, children, className }) => (
     </MuiCozyTheme>
   </CozyThemeContext.Provider>
 )
-
-export const useCozyTheme = () => useContext(CozyThemeContext)
 
 export default CozyTheme

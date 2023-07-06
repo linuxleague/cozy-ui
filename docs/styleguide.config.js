@@ -136,12 +136,13 @@ module.exports = {
         '../react/ActionsMenu',
         '../react/AppSections',
         '../react/BottomSheet',
+        '../react/providers/Breakpoints',
         '../react/ContactsList',
         '../react/ContactsListModal',
         '../react/ContactPicker',
         '../react/CozyDialogs',
         '../react/CozyDialogs/SpecificDialogs',
-        '../react/CozyTheme',
+        '../react/providers/CozyTheme',
         '../react/FileImageLoader',
         '../react/FilePicker',
         '../react/HistoryRow',
@@ -161,7 +162,6 @@ module.exports = {
     {
       name: 'Hooks',
       components: () => [
-        '../react/hooks/useBreakpoints/index.jsx',
         '../react/hooks/useBrowserOffline.jsx',
         '../react/hooks/useConfirmExit/index.jsx',
         '../react/hooks/useCycle.jsx',
