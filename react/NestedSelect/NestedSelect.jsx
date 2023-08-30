@@ -5,6 +5,7 @@ import omit from 'lodash/omit'
 import Input from '../Input'
 import Typography from '../Typography'
 import ItemRow from './ItemRow'
+import List from '../List'
 
 export { ItemRow }
 
@@ -112,14 +113,14 @@ class NestedSelect extends Component {
         ) : null}
         <ContentComponent>
           {canSelectParent && level > 0 ? (
-            <>
+            <List>
               <ItemRow
                 radioPosition={radioPosition}
                 item={parentItem}
                 onClick={this.handleClickItem}
                 isSelected={isSelectedWithLevel(parentItem)}
               />
-            </>
+            </List>
           ) : null}
           {searchOptions && level === 0 && (
             <div className="u-mh-1 u-mb-half">
@@ -140,7 +141,21 @@ class NestedSelect extends Component {
                 {searchOptions.noDataLabel}
               </Typography>
             ) : (
-              searchResult.map(item => (
+              <List>
+                {searchResult.map(item => (
+                  <ItemRow
+                    radioPosition={radioPosition}
+                    key={item.key || item.title}
+                    item={item}
+                    onClick={this.handleClickItem}
+                    isSelected={isSelectedWithLevel(item)}
+                  />
+                ))}
+              </List>
+            )
+          ) : (
+            <List>
+              {children.map(item => (
                 <ItemRow
                   radioPosition={radioPosition}
                   key={item.key || item.title}
@@ -148,18 +163,8 @@ class NestedSelect extends Component {
                   onClick={this.handleClickItem}
                   isSelected={isSelectedWithLevel(item)}
                 />
-              ))
-            )
-          ) : (
-            children.map(item => (
-              <ItemRow
-                radioPosition={radioPosition}
-                key={item.key || item.title}
-                item={item}
-                onClick={this.handleClickItem}
-                isSelected={isSelectedWithLevel(item)}
-              />
-            ))
+              ))}
+            </List>
           )}
         </ContentComponent>
       </>
