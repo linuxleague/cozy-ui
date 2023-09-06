@@ -8,7 +8,7 @@ import ListItemText from 'cozy-ui/transpiled/react/ListItemText'
 import Checkbox from 'cozy-ui/transpiled/react/Checkbox'
 import palette from 'cozy-ui/transpiled/react/palette'
 import NestedSelectModal from 'cozy-ui/transpiled/react/NestedSelect/Modal'
-import useBreakpoints from 'cozy-ui/transpiled/react/hooks/useBreakpoints'
+import useBreakpoints from 'cozy-ui/transpiled/react/providers/Breakpoints'
 
 const Image = ({ letter }) => (
   <Circle backgroundColor={palette.melon}>
